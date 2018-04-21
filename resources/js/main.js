@@ -9,7 +9,7 @@ $(document).ready(function () {
     // console.log($("#searchText").val());
     //create an event for when form is submited
     $("#searchForm").on("submit", function (event) {
-        $(".description").addClass("js--no-display");
+        $("#des").addClass("js--no-display");
         let searchText = $("#searchText").val();
         console.log(searchText);
             getMoviesList(searchText);
@@ -45,7 +45,7 @@ function getMoviesList(search) {
                         </div>
                     </div>
                 `;
-                $("#movieContainer").toggleClass("js--con-style");
+                $("#movieContainer").addClass("js--con-style");
                 
             }
         };
